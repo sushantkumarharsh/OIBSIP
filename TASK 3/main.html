@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="containers">
+      <h1>Temperature converter</h1>
+
+      <div class="main">
+        <form id="TempCal" onsubmit="event.preventDefault(); calculateTemp();">
+          <label for="temp" class="main_head">
+            Enter value to change Temperature
+          </label>
+          <br />
+          <input
+            type="number"
+            name="input_num"
+            id="input_value"
+            class="input_num1"
+            placeholder="Enter Value Here"
+          />
+
+          <select name="temp" class="temperature" id="selected">
+          
+            <option value="Fahrenheit" class="option">Fahrenheit</option>
+            <option value="Celsius" class="option">Celsius</option>
+            <option value="Kelvin" class="option">Kelvin</option>
+          </select>
+          <br />
+          <input type="submit" class="btn" value="Convert" />
+          <div id="result1" class="result"></div>
+          <div id="result2" class="result"></div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>

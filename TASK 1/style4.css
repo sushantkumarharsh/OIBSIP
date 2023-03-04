@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body{
+ color:white;
+box-sizing: border-box;
+
+}
+.gym-name{
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 3rem;
+ background-color: black;
+
+
+ width: 100%;
+ position: fixed;
+ z-index: 1000;
+}
+.name{
+  background-image: linear-gradient(to right, rgba(13, 123, 213, 0.923),rgba(203, 244, 18, 0.901));
+  -webkit-background-clip: text;
+  color: transparent;
+  
+  
+}
+
+.section{
+    
+    background-image:linear-gradient(to right bottom, rgba(65, 61, 61, 0.645), rgba(65, 61, 61, 0.645)) ,url(p8.webp);
+    background-size: cover;
+    position: relative;
+ 
+    backface-visibility: hidden;
+   line-height: 2;
+   display: inline-block;
+  
+
+   
+}
+.section-1{
+ 
+   padding: 10rem 0;
+   position: relative;
+   background-image:url(p6.jpeg);
+   opacity: .9;
+   background-size: cover;
+}
+.navbar{
+    position: relative;
+    top: 5rem;
+    left: 0;
+ padding: 4rem 0;
+    width: 100%;
+    margin: 3rem 0;
+   
+}
+.navbaar-1{
+    display: inline-block;
+    float: left;
+    width: 55%;
+}
+.navigator{
+    
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding-left:1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+   
+    margin-left: 1rem; 
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    overflow: hidden;
+    backface-visibility: hidden;
+    background-image: linear-gradient(to right, rgb(15, 180, 231), rgb(255, 136, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 400;
+}
+.navigator:hover{
+color: orange;
+cursor: pointer;
+}
+.srch{
+    width: 35%;
+    float: left;
+
+    margin-left: 15rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: white;
+    text-align: left;
+    padding: .5rem;
+    border: 0.2rem solid brown;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+  
+}
+
+::placeholder{
+    
+    color: white;
+    text-transform: capitalize;
+    
+
+}
+input:focus{
+   outline: none;
+}
+input:focus::placeholder {
+    
+    color: transparent;
+    font-size: 1rem;
+  }
+.btn{
+    width: 10%;
+    
+   
+    border-radius: 0.7rem;
+    color: white;
+    background-color:brown;
+    padding: .5rem;
+    margin-left: 0.2rem;
+    text-transform: capitalize;
+    border: 2px solid brown;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+
+
+}
+.btn:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+.content{
+    float: left;
+    
+}
+.heading-pri{
+    font-size: 4rem;
+    font-weight: 1700;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    background-image: linear-gradient(to right, yellow, rgb(27, 239, 122));
+    -webkit-background-clip: text;
+    color: transparent;
+   
+}
+.para{
+    font-size: 2rem;
+    font-weight: 400;
+    float: left;
+width: 100%;
+    
+}
+.p1{
+    
+    text-transform: capitalize;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    animation-name: moveinright;
+    animation-duration: 1s;
+}
+.s1, .s2{
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(247, 184, 12);
+}
+.btn1{
+    padding: .5rem;
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    animation-name: moveinbottom;
+    animation-duration: 1s;
+    transition: all .2s;
+
+}
+.btn2{
+    padding: .5rem;
+    
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: black;
+    color: white;
+    border: 1px solid white;
+    animation-name: moveinbottom;
+    animation-duration: 1s;
+    transition: all .2s;
+}
+.btn1:hover, .btn2:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    transform: scale(1.2);
+}
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-8rem);
+    }
+    70%{
+        opacity: 0.5;
+        transform: translateX(1rem)
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+   
+} 
+  @keyframes moveinright{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    70%{
+        opacity: 0.5;
+        
+        transform: translateX(-3rem);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+} 
+@keyframes moveinbottom{
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+   
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+} 
+.search-bar{
+    float: left;
+    display: inline-block;
+    width: 40%;
+
+}
+
+.social{
+    
+   text-align: center;
+    
+    background-color: rgb(38, 36, 36);
+    animation-name: moveinbottom;
+    animation-duration: 2s;
+   
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.contact{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.story{
+   margin-bottom: 2rem;
+  
+}
+
+.story-1{
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 300;
+    
+    margin-bottom: 3rem;
+    padding: 3rem;
+    transform: skewX(-11deg);
+    border-radius: 0.3rem;
+    width: 75%;
+    overflow: hidden;
+    background-image: linear-gradient(to right bottom, rgba(20, 19, 19, 0.803), rgba(65, 61, 61, 0.903));
+    transition: all .3s;
+
+}
+.story-1:hover{
+    box-shadow: 0 3rem 6rem rgba(65, 63, 63, 0.595);
+    background-color: black;
+    color: orchid;
+}
+
+ 
+.heading-sec{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 1000;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    transition: all .2s;
+    background-image: linear-gradient(to right, rgba(0, 255, 34, 0.856), rgba(138, 190, 18, 0.815));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.heading-sec:hover{
+    transform: skew(-5deg, -3deg);
+}
+.img{
+    
+     margin:3rem;
+    backface-visibility: hidden;
+    height: 100%;
+   float: left;
+    height: 15rem;
+    width: 15rem;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: skewX(11deg);
+
+}
+.paragraph{
+text-transform: capitalize;
+  padding: 2rem;
+    line-height: 2;
+    transform: skewX(11deg);
+}
+.heading-ter{
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, rgba(255, 217, 0, 0.868), rgba(35, 190, 18, 0.815));
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .3s;
+}
+.heading-ter:hover{
+    transform: scale(1.3);
+}
+.sp{
+    text-transform: lowercase;
+}
+.read{
+    text-align: center;
+    margin-top: 10rem;
+}
+.button:link, 
+.button:visited{
+    display: inline-block;
+   text-decoration: none;
+    text-transform: uppercase;
+   background-color: transparent;
+    /* background-image: linear-gradient(to right, yellow, rgb(27, 239, 122));
+    -webkit-background-clip: text;
+    color: transparent; */
+    color: greenyellow;
+     border-bottom: 2px solid greenyellow;
+   transition: all .2s;
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+.button:hover{
+    
+  background-color: black;
+    color: white;
+    transform: translateY(-0.5rem);
+    border-bottom: 2px solid white;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
+    
+}
+.button:active{
+    background-color:black;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+}
+.footer{
+    background-image: linear-gradient(to right bottom, rgba(20, 19, 19, 0.803), rgba(65, 61, 61, 0.903));
+    padding: 6rem 0;
+}
+.footer-navigation{
+    display: inline-block;
+     
+}
+
+.footer-item{
+    margin-left:1.7rem;
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .3s;
+    padding: 1rem 0;
+    
+    
+}
+.footer-item :hover{
+    transform: scale(2);
+ }
+.footer-list {
+    list-style: none; }
+
+.footer-copyright{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    background-image: linear-gradient(to right bottom, rgba(20, 19, 19, 0.803), rgba(65, 61, 61, 0.903));
+    color: white;
+    text-transform: capitalize;
+}
+.footer-icons{
+    text-decoration: none;
+    display: inline-block;
+ float: right;
+    margin: 0 3rem;
+    
+   
+   
+}
+.footer-icons a :hover{
+    transform: rotate(7deg) scale(1.8);
+}
+.footer-icons a{
+    font-size: 2rem;
+    
+}
+ .fa{
+
+  color: white;
+    padding: 0 2rem;
+    transition: all .3s;
+}
+.footer-list .heading-ter{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer-icons .heading-ter{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
